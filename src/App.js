@@ -1,15 +1,17 @@
 import Content from './Components/Content/Content';
+import ItemLitsContainer from './Components/Item/ItemListContainer';
 import NavBar from './Components/NavBar/NavBar';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-        
+
+        <center>
        <NavBar/>
-       <h1>Este es el segundo desafio</h1>
+         HOLA SOY APP DE ECOMMERSE
+         <ItemLitsContainer greeting= 'hola soy el ItemListCointainer'/>
        <Content/>
-    </div>
+       </center>
   );
 }
 
