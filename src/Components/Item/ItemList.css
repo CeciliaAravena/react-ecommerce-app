@@ -1,0 +1,11 @@
+div .card {
+    margin: 0px 20px;
+}
+
+.item__count--number {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+     border: 1px solid gainsboro;
+     border-radius: 5px;
+     width: 100%;
