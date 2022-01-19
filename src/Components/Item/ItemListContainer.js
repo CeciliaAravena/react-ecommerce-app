@@ -1,32 +1,38 @@
-import {useState, useEffect} from 'react'
-import { getFetch } from '../../helpers/getFech'
-import ItemList from '../Item/ItemList'
+import {useState, useEffect} from 'react';
+import Container from 'react-bootstrap/Container';
+import { getFetch } from '../../helpers/getFech';
+import Loading from '../animation/Loading';
+import ItemList from './ItemList';
 
 
-  function ItemListContainer( {greeting} ) {
+ import './ItemList.css';
+
+ function ItemListContainer( {greeting} ) {
+
      const [products, setProducts] = useState([])
      const [loading, setLoading] = useState(true)
 
-
-
      useEffect(() => {
-             getFetch
-             .then(resp => setProducts(resp)) 
-             .catch(err => console.log(err))
-             .finally(()=>setLoading(false))            
-     },[])
+         getFetch
+         .then(respData => setProducts(respData))
+         .catch(error => console.log(error))
+         .finally(() => setLoading(false))
+     }, [])
 
-     // [] => retorna otro array [<li>1</li>,....]
      return (
-        <div>
-            { greeting }
-              { loading ? 
-                  <h2>Cargando...</h2> 
-                  :  
-                  <ItemList products={products}/>
-              }
-          </div>
-      )
-  }
+         <>
+             <Container>
+                 <h2 className="head--title">{greeting}</h2>
+                 <div className="d-flex justify-content-center">
+                     { loading ? 
+                         <Loading />
+                         :
+                         <ItemList products={products} />
+                     }
+                 </div>
+             </Container>
+         </>
+     )
+ }
 
-  export default ItemListContainer;
+ export default ItemListContainer;

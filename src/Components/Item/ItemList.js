@@ -1,15 +1,15 @@
-import React from 'react'
- import Item from './Item'
+import Item from "./Item";
+import { Row } from "react-bootstrap";
+
+import'./ItemList.css';
 
 
   function ItemList({ products }) {
-      return (
-          <>
-              { products.map((prod) => <Item prod={prod}/> ) }
+    return (
+        <Row xs={1} md={2} lg={3} className="g-4">
+            {products.map(product => <Item key={product.id} product={product} />)}
+        </Row>
+    )
+}
 
-          </>
-      )    
-  }
-
-
-  export default ItemList;
+ export default ItemList;

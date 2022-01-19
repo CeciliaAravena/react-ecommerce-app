@@ -1,11 +1,32 @@
-div .card {
-    margin: 0px 20px;
+/* Title */
+.head--title {
+    height: 30vh;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.item__count--number {
-    font-size: 25px;
+/* Card item product */
+.card--product {
     display: flex;
-    justify-content: space-between;
-     border: 1px solid gainsboro;
-     border-radius: 5px;
-     width: 100%;
+    justify-content: center;
+}
+.card--product .card {
+    width: 18rem;
+    margin-bottom: 20px;
+}
+.card--product .card:hover {
+    box-shadow: 5px 10px 20px #e09a9a;
+    transition: all 0.7s linear;
+}
+.card--product img {
+    height: 40vh;
+}
+.card--product img:hover {
+    transform: scale(1.4);
+    transition: all 0.4s ease-in-out;
+}
+.card--product .overflow {
+    overflow: hidden;
+} 

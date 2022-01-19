@@ -1,29 +1,25 @@
-import React  from "react"
+import Button from 'react-bootstrap/Button';
+import  Card from "react-bootstrap/Card";
+import  Col  from "react-bootstrap/Col";
 
-  function Item({prod}) {
-      return (
-          <div 
-              key={prod.id}
-              className='col-md-4'
-          >                        
-              <div className="card w-100 mt-5" >
-                  <div className="card-header">
-                      {`${prod.name} - ${prod.categoria}`}
-                  </div>
-                  <div className="card-body">
-                      <img src={prod.img} alt='' className='w-50' />
-                      {prod.price}                                                            
-                  </div>
-                  <div className="card-footer">  
-                      <button className="btn btn-outline-primary btn-block">
-                          detalle del producto
-                      </button>
+import './ItemList.css';
 
 
-                  </div>
-              </div>
-          </div>
-      )
-  }
+function Item( {product} ) {
+ return (
+    <Col key={product.id} className="card--product">
+        <Card>
+            <div className="overflow">
+                <Card.Img variant="top" src={product.img} alt="..." />
+            </div>
+            <Card.Body>
+                <Card.Title className="text-center">{product.name}</Card.Title>
+                <Card.Text className="text-center">{product.price.toFixed(2)}</Card.Text>
+                <Button variant="secondary" className="w-100 text-uppercase">ver detalle</Button>
+            </Card.Body>
+        </Card>
+    </Col>
+    )
 
-  export default Item;
+}
+export default Item;

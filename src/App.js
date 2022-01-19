@@ -1,24 +1,24 @@
-import Content from './Components/Content/Content';
-import ItemCount from './Components/Item/ItemCount';
-import ItemLitsContainer from './Components/Item/ItemListContainer';
-import NavBar from './Components/NavBar/NavBar';
-import './App.css';
+import ItemListContainer from "./Components/Item/ItemListContainer";
+ import NavBar from "./Components/NavBar/NavBar";
+ import ItemDetailContainer from './Components/Details/ItemDetailsContainer';
+ import SlideBar from './Components/NavBar/SlideBar';
 
-function App() {
-  const inicial = 1
-   const max = 10
+  import './App.css'
 
+
+  function App() {
 
     return (
       <>
-       <NavBar/>
-       <ItemLitsContainer greeting= 'hola soy el ItemListCointainer'/>
-       <Content/>
-       <div clasName= 'ecommerce-arapp'>
-         <ItemCount inicial={inicial} max={max} />
-       </div>
+        <div className="container--fluid">
+       <NavBar />
+       <SlideBar titulo='Título desde App' subtitulo='Subtítulo desde App' />
+       <ItemListContainer greeting='Encabezado' />
+       <ItemDetailContainer />
+     </div>
       </>
-  );
-}
 
-export default App;
+    );
+  }
+
+ export default App;

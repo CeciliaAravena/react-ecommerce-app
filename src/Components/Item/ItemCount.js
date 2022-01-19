@@ -1,18 +1,23 @@
-import { useCounter } from "../hooks/useCounter";
- import { useState } from "react";
+import Button from 'react-bootstrap/Button';
+import React from 'react';
+import { useCounter } from '../../helpers/useCounter';
 
-  const ItemCount = ({ inicial }) => {
-      const {counter, increment, decrement, reset } = useCounter(inicial)
+import './ItemList.css';
 
-      return (
 
-           <div >
-              <h1>{counter}</h1>
-              <button onClick={() =>increment(2)}>+</button>
-              <button onClick={decrement}>-</button>
-              <button onClick={reset}>Reset</button>
-           </div>
-      )
-  }
+function ItemCount( {initial, stock} ) {
 
-  export default ItemCount 
+     const {counter, handleRest, handleSum} = useCounter(initial, stock);
+
+     return (
+         <>
+             <span className="item__count--number">
+                 <Button variant="outline-secondary" onClick={handleRest}>-</Button>
+                 {counter}
+                 <Button variant="outline-secondary" onClick={handleSum}>+</Button>
+             </span>
+         </>
+     )
+}
+
+export default ItemCount;

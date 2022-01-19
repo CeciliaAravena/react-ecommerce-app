@@ -1,0 +1,61 @@
+[
+     {
+     "id": 1,
+     "name": "Basic",
+     "price": 2000,
+     "description": "Descripción de producto 1 => Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+     "img": "https://res.cloudinary.com/dmvryasce/image/upload/v1640261555/cm_os7phk.png",
+     "category": "Categoria 1",
+     "stock": 5
+     },
+
+     {
+     "id": 2,
+     "name": "Plus",
+     "price": 3000,
+     "description": "Descripción de producto 2 => Illo saepe nesciunt omnis nostrum mollitia ullam consequatur necessitatibus corrupti quaerat sint! Natus, error quaerat?",
+     "img": "https://res.cloudinary.com/dmvryasce/image/upload/v1640261555/cm_os7phk.png",
+     "category": "Categoria 1",
+     "stock": 5
+     },
+
+     {
+     "id": 3,
+     "name": "Basic",
+     "price": 2500,
+     "description": "Descripción de producto 3 => Consectetur adipisicing elit. Facilis, ratione!",
+     "img": "https://res.cloudinary.com/dmvryasce/image/upload/v1640261573/dw_jtydkj.png",
+     "category": "Categoria 2",
+     "stock": 10
+     },
+
+     {
+     "id": 4,
+     "name": "Plus",
+     "price": 4000,
+     "description": "Descripción de producto 4 => Ipsum dolor sit amet consectetur adipisicing elit. Facilis, ratione!",
+     "img": "https://res.cloudinary.com/dmvryasce/image/upload/v1640261573/dw_jtydkj.png",
+     "category": "Categoria 2",
+     "stock": 8
+     },
+
+     {
+     "id": 5,
+     "name": "Basic",
+     "price": 3000,
+     "description": "Descripción de producto 5 => Lillo saepe nesciunt omnis nostrum mollitia ullam consequatur necessitatibus corrupti quaerat sint! Natus, error quaerat?",
+     "img": "https://res.cloudinary.com/dmvryasce/image/upload/v1640261565/media_w7uvjo.png",
+     "category": "Categoria 3",
+     "stock": 10
+     },
+
+     {
+     "id": 6,
+     "name": "Plus",
+     "price": 4500,
+     "description": "Descripción de producto 6 => Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+     "img": "https://res.cloudinary.com/dmvryasce/image/upload/v1640261565/media_w7uvjo.png",
+     "category": ["Categoria 3", "Categoria 2"],
+     "stock": 5
+     }
+ ]
