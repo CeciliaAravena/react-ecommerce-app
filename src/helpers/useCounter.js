@@ -5,13 +5,14 @@ import { useState } from "react";
      const [counter, setCounter] = useState(initial);
 
      const handleSum = () => {
-         (counter < stock) &&
-             setCounter(prev => prev + 1)
-     }
-     const handleRest = () => {
-         (counter > initial) &&
-             setCounter(prev => prev - 1)
-     }
+        (counter < stock) &&
+        setCounter(Math.max(counter + 1, 1))
+    }
+    const handleRest = () => {
+        (counter > initial) &&
+        setCounter(Math.max(counter - 1, 1))
+    }
+
 
      return {
          counter,

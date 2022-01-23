@@ -4,6 +4,10 @@
     background: none;
     margin-left: 5px;
 }
+.cart--btn svg {
+    color: white;
+}
+
 .cart--counter {
     background-color: #C4C4C4;
     border-radius: 50%;
@@ -13,14 +17,44 @@
     right: 10px;
     bottom: 5px;
 }
+/* NavBar */
+.navbar {
+    height: 20vh;
+    background-image: url("../../img/fondorose.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #da7dab;
+}
+.nav--navlink {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.nav--navlink:hover {
+    color: white;
+    text-shadow: 0 0 20px #FF2079;
+}
+/* .navlink--active {
+    color: gainsboro;
+    text-decoration: none;
+} */
+
 
 /* IMG slide */
 .slide__bar--container {
-    background-image: ;
+    background-image: "https://res.cloudinary.com/dmvryasce/image/upload/v1642534936/fondo2_mxbflq.jpg" ;
     background-size: cover;
+    background-size: cover;
+/* background-position: center; */
     background-repeat: no-repeat;
     height: 75vh;
     margin-top: 20vh;
+    box-shadow: 0 0 20px #da7dab;
+    /* border-bottom: 1px solid #440BD4; */
+    opacity: 0.8;
 }
 .slide__bar--container div {
     display: flex;
@@ -31,4 +65,35 @@
 }
 .slide__bar--container h1, .slide__bar--container p {
     text-align: center;
-}
+    color: white;
+     text-shadow: 0 0 40px #da7dab;
+ }
+
+ /* NavBar */
+ @media only screen and (min-width:0px) and (max-width:991px) {
+     .navbar-nav {
+         position: relative;
+         top: 18vh;
+         right: 12px;
+         text-align: center;
+         padding: 30px;
+         background-color: rgba(16, 16, 16);
+         width: 100vw;
+     }
+     .nav--navbrand {
+         position: fixed;
+         top: 24px;
+         left: 10px;
+     }
+     .navbar-toggler {
+         position: fixed;
+         top: 45px;
+         right: 70px;
+         border: none;
+     }
+     .cart--btn {
+         position: fixed;
+         top: 45px;
+         right: 10px;
+     }
+ } 

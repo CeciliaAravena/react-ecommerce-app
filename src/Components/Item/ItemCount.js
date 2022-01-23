@@ -5,19 +5,21 @@ import { useCounter } from '../../helpers/useCounter';
 import './ItemList.css';
 
 
-function ItemCount( {initial, stock} ) {
+function ItemCount( {initial, stock, onAdd} ) {
 
-     const {counter, handleRest, handleSum} = useCounter(initial, stock);
-
+    const {counter, handleRest, handleSum} = useCounter(initial = 1, stock);
      return (
          <>
-             <span className="item__count--number">
-                 <Button variant="outline-secondary" onClick={handleRest}>-</Button>
-                 {counter}
-                 <Button variant="outline-secondary" onClick={handleSum}>+</Button>
-             </span>
-         </>
-     )
-}
+            <span className="item__count--number">
+                  <Button onClick={handleRest}>-</Button>
+                  {counter}
+                  <Button onClick={handleSum}>+</Button>
+              </span>
+              <Button className="mt-2 w-75" onClick={() => onAdd(counter)}>
+                  Agregar al carrito
+              </Button>
+        </>
+      )
+  }
 
 export default ItemCount;
