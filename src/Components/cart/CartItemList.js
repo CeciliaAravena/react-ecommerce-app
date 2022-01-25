@@ -10,10 +10,10 @@ import Button from 'react-bootstrap/Button';
 
  function CartItemList() {
 
-     const navigate = useNavigate();
-     const { cartList, clearCart, subtotalBuy, ivaBuy, totalBuy } = useCartContext();
-     const { formatNumber } = useFormatNumber();
-
+    
+    const { cartList, clearCart, subtotalBuy, ivaBuy, totalBuy } = useCartContext();
+    const { formatNumber } = useFormatNumber();
+    const navigate = useNavigate();    
      return (
          <>
              <Table striped bordered hover>
@@ -34,18 +34,18 @@ import Button from 'react-bootstrap/Button';
 
                      {/* Totales compra */}
                      <tr>
-                         <td colSpan={4} className="text-end">Subtotal</td>
-                         <td colSpan={2}>{formatNumber(subtotalBuy())}</td>
-                     </tr>
-                     <tr>
-                         <td colSpan={4} className="text-end">IVA</td>
-                         <td colSpan={2}>{formatNumber(ivaBuy())}</td>
-                     </tr>
-                     <tr>
-                         <td colSpan={4} className="text-end">Total</td>
-                         <td colSpan={2}>{formatNumber(totalBuy())}</td>
-                     </tr>
-                 </tbody>
+                        <td colSpan={4} className="text-end">Subtotal compra</td>
+                        <td colSpan={2}>{formatNumber(subtotalBuy())}</td>
+                    </tr>
+                    <tr>
+                        <td colSpan={4} className="text-end">IVA</td>
+                        <td colSpan={2}>{formatNumber(ivaBuy())}</td>
+                    </tr>
+                    <tr>
+                        <td colSpan={4} className="text-end">Total</td>
+                        <td colSpan={2}>{formatNumber(totalBuy())}</td>
+                    </tr>
+                </tbody>
              </Table>
 
              <div className="d-flex justify-content-center">
@@ -57,6 +57,11 @@ import Button from 'react-bootstrap/Button';
                  {/* Volver al inicio */}
                  <Button onClick={() => {navigate('/')}} className="cart--button">
                      Seguir comprando
+                 </Button>
+
+                 {/* Terminar compra */}
+                 <Button className="cart--button">
+                     Terminar compra
                  </Button>
              </div>
          </>

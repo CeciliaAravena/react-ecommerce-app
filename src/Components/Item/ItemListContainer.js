@@ -1,17 +1,15 @@
 import { useState, useEffect } from 'react';
-  import { useParams } from 'react-router-dom';
-  import Container from 'react-bootstrap/Container';
-  import NavDropdown from 'react-bootstrap/NavDropdown';
-  // import Dropdown from 'react-bootstrap/Dropdown';
-  import { Link } from 'react-router-dom';
-  import { getFetch } from '../../helpers/getFech';
-  import Loading from '../animation/Loading';
-  import ItemList from './ItemList';
+import { useParams, Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { getFetch } from '../../helpers/getFech';
+import Loading from '../animation/Loading';
+import ItemList from './ItemList';
 
 
- import './ItemList.css';
+import './ItemList.css';
 
- function ItemListContainer(props) {
+function ItemListContainer(props) {
 
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -47,24 +45,10 @@ import { useState, useEffect } from 'react';
                               <Link className="dropdown--item" to="/categoria/Fotografia">Fotografia</Link>
                           </NavDropdown.Item>
                       </NavDropdown>
-                      {/* <Dropdown>
-                          <Dropdown.Toggle>Filtro</Dropdown.Toggle>
-                          <Dropdown.Menu>
-                              <Dropdown.Item>
-                                  <Link to="/categoria/categoria 1">Categoria 1</Link>
-                              </Dropdown.Item>
-                              <Dropdown.Item>
-                                  <Link to="/categoria/categoria 2">Categoria 2</Link>
-                              </Dropdown.Item>
-                              <Dropdown.Item>
-                                  <Link to="/categoria/categoria 3">Categoria 3</Link>
-                              </Dropdown.Item>
-                          </Dropdown.Menu>
-                      </Dropdown> */}
                   </div>
                   <div className="d-flex justify-content-center">
                   { loading ? (
-                          <Loading /> 
+                          <Loading load='Cargando Servicios' />
                       ) : (
                           <ItemList products={products} />
 

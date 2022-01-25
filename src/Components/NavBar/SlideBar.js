@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 
- import './Navbar.css';
+
+import './Navbar.css'
 
 
  function SlideBar(props) {
