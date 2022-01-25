@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 3rem;
     color: white;
-    text-shadow: 0 0 20px #FF2079;
+    text-shadow: 0 0 20px #da7dab;
 }
 
 /* Card detail */
@@ -16,11 +16,11 @@
     flex-direction: row;
     align-items: center;
     padding: 10px;
-    background-color: rgba(16, 16, 16, 0.6);
-    border: 1px solid #FF2079;
+    background-color: rgba(189, 178, 255);
+    border: 1px solid #da7dab;
 }
 .card--detail .card:hover {
-    box-shadow: 5px 10px 20px #FF2079;
+    box-shadow: 5px 10px 20px #da7dab;
     transition: all 0.7s linear;
 }
 .card--detail .card-img {
@@ -49,9 +49,13 @@
     color: gainsboro;
 }
 .card--detail button {
-    background-color: rgba(16, 16, 16);
-    border: 1px solid #FF2079;
+    background-color: rgba(189, 178, 255);
+    border: 1px solid #da7dab;
     transition: color .15s ease-in-out,
+}
+.card--detail button a {
+    text-decoration: none;
+    color: white;
 }
 .card--detail button:hover {
     background-color: rgba(16, 16, 16);
@@ -63,7 +67,7 @@
     font-size: 25px;
     display: flex;
     justify-content: space-between;
-    border: 1px solid #FF2079;
+    border: 1px solid #da7dab;
     border-radius: 5px;
     width: 75%;
  
@@ -81,8 +85,8 @@
         flex-direction: column;
         align-items: center;
         padding: 10px;
-        background-color: rgba(16, 16, 16, 0.6);
-        border: 1px solid #FF2079;
+        background-color: rgba(189, 178, 255);
+        border: 1px solid #da7dab;
     }
     .card--detail .card-body {
         width: 90vw;

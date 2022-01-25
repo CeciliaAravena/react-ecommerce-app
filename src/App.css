@@ -1,13 +1,13 @@
 /* Container */
 .container--fluid {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x:visible;
 }
 
  /* BG page App */
  .bg--colors {
    background-image: url('./img/fondo2.jpg');
-   background-image: url('https://res.cloudinary.com/dmvryasce/image/upload/v1642464219/fondo_qoyt58.jpg');
+   background-image: url('https://res.cloudinary.com/dmvryasce/image/upload/v1642534936/fondo2_mxbflq.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;

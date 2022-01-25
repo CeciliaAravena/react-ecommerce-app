@@ -9,7 +9,7 @@
 .head--product h2 {
     font-size: 3rem;
     color: white;
-    text-shadow: 0 0 20px #FF2079;
+    text-shadow: 0 0 20px #da7dab;
 }
 
 /* Card item product */
@@ -20,8 +20,8 @@
 .card--product .card {
     width: 18rem;
     margin-bottom: 20px;
-    border: 1px solid #FF2079;
-    background-color: rgba(16, 16, 16, 0.9);
+    border: 1px solid #da7dab;
+    background-color: rgba(189, 178, 255);
 }
 .card--product .card:hover {
     box-shadow: 5px 10px 20px #e09a9a;
@@ -45,19 +45,19 @@
 } 
 
 .card--product button {
-    background-color: rgba(16, 16, 16);
-    border: 1px solid #FF2079;
+    background-color: rgba(160, 196, 255);
+    border: 1px solid #da7dab;
     transition: color .15s ease-in-out,
 }
 .card--product button:hover {
-    background-color: rgba(16, 16, 16);
+    background-color: rgba(160, 196, 255);
     box-shadow: 5px 10px 20px #440bd4;
 }
 
 /* Filter Product */
 .dropdown {
-    background-color: rgba(16, 16, 16);
-    border: 1px solid #FF2079;
+    background-color: rgba(1160, 196, 255);
+    border: 1px solid #da7dab;
     border-radius: 5px;
     transition: color .15s ease-in-out,
 }
@@ -67,11 +67,11 @@
 }
 .dropdown .dropdown-toggle:hover {
     color: white;
-    background-color: rgba(16, 16, 16);
+    background-color: rgba(160, 196, 255);
     border-radius: 5px;
 }
 .dropdown-menu {
-    background-color: rgba(16, 16, 16);
+    background-color: rgba(160, 196, 255);
     box-shadow: 5px 10px 20px #440bd4;
 }
 .dropdown--item {
@@ -80,5 +80,5 @@
     font-size: 20px;
 }
 .dropdown-item:hover {
-    text-shadow: 0 0 20px #b10394;
+    text-shadow: 0 0 20px #BDB2FF;
 }  

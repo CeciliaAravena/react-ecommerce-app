@@ -2,11 +2,15 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
+import useFormatNumber from '../../helpers/useFormatNumber.js';
 
 import './ItemList.css';
 
 
 function Item( {product} ) {
+
+    const { formatNumber } = useFormatNumber();
+
     return (
         <Col key={product.id} className="card--product">
             <Card>
@@ -15,7 +19,7 @@ function Item( {product} ) {
                 </div>
                 <Card.Body>
                     <Card.Title className="text-center">{product.name}</Card.Title>
-                    <Card.Text className="text-center">{product.price.toFixed(2)}</Card.Text>
+                    <Card.Text className="text-center">{formatNumber(product.price)}</Card.Text>
                     <Link to={`/detalle/${product.id}`}>
                         <Button className="w-100 text-uppercase">ver detalle</Button>
                     </Link>

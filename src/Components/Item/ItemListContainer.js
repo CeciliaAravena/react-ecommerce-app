@@ -13,9 +13,9 @@ import { useState, useEffect } from 'react';
 
  function ItemListContainer(props) {
 
-    const [products, setProducts] = useState([])
-    const [loading, setLoading] = useState(true)
-    const { idCategory } = useParams()
+    const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const { idCategory } = useParams();
 
     useEffect(() => {
         if (idCategory) {
@@ -36,15 +36,15 @@ import { useState, useEffect } from 'react';
               <Container>
                   <div className="head--product">
                       <h2>{props.heading}</h2>
-                      <NavDropdown title="Filtro" id="offcanvasNavbarDropdown">
+                      <NavDropdown title="Digital" id="offcanvasNavbarDropdown">
                           <NavDropdown.Item>
-                              <Link className="dropdown--item" to="/categoria/categoria 1">Community Mannager</Link>
+                              <Link className="dropdown--item" to="/categoria/Community Manager">Community Mannager</Link>
                           </NavDropdown.Item>
                           <NavDropdown.Item>
-                              <Link className="dropdown--item" to="/categoria/categoria 2">Diseño Web</Link>
+                              <Link className="dropdown--item" to="/categoria/Diseño Web">Diseño Web</Link>
                           </NavDropdown.Item>
                           <NavDropdown.Item>
-                              <Link className="dropdown--item" to="/categoria/categoria 3">Fotografia</Link>
+                              <Link className="dropdown--item" to="/categoria/Fotografia">Fotografia</Link>
                           </NavDropdown.Item>
                       </NavDropdown>
                       {/* <Dropdown>

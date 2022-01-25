@@ -23,7 +23,7 @@ import logo from '../../img/logosur.png';
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <NavLink to="/" className="nav--navlink">Home</NavLink>
+                                <NavLink to="/" className="nav--navlink">Inicio</NavLink>
                                 <NavLink to="/" className="nav--navlink">Planner</NavLink>
                                 <NavLink to="/" className="nav--navlink">Servicios</NavLink>
                                 <NavLink to="/" className="nav--navlink">Contacto</NavLink>

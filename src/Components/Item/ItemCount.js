@@ -7,7 +7,7 @@ import './ItemList.css';
 
 function ItemCount( {initial, stock, onAdd} ) {
 
-    const {counter, handleRest, handleSum} = useCounter(initial = 1, stock);
+    const { counter, handleRest, handleSum } = useCounter(initial = 1, stock);
      return (
          <>
             <span className="item__count--number">

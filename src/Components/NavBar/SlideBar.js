@@ -8,8 +8,8 @@ import Container from 'react-bootstrap/Container';
          <>
              <section className="slide__bar--container">
                  <Container>
-                     <h1 style={{fontSize: 50}}>{props.titulo}</h1>
-                     <p style={{fontSize: 25}}>{props.subtitulo}</p>
+                     <h1 style={{fontSize: 50}}>{props.title}</h1>
+                     <p style={{fontSize: 25}}>{props.subtitle}</p>
                  </Container>
              </section>
          </>

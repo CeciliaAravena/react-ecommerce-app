@@ -45,7 +45,7 @@
 
 /* IMG slide */
 .slide__bar--container {
-    background-image: "https://res.cloudinary.com/dmvryasce/image/upload/v1642534936/fondo2_mxbflq.jpg" ;
+    background-image: 'https://res.cloudinary.com/dmvryasce/image/upload/v1642534936/fondo2_mxbflq.jpg' ;
     background-size: cover;
     background-size: cover;
 /* background-position: center; */
@@ -65,35 +65,35 @@
 }
 .slide__bar--container h1, .slide__bar--container p {
     text-align: center;
-    color: white;
+    color: #da7dab;
      text-shadow: 0 0 40px #da7dab;
  }
 
- /* NavBar */
- @media only screen and (min-width:0px) and (max-width:991px) {
-     .navbar-nav {
-         position: relative;
-         top: 18vh;
-         right: 12px;
-         text-align: center;
-         padding: 30px;
-         background-color: rgba(16, 16, 16);
-         width: 100vw;
-     }
-     .nav--navbrand {
-         position: fixed;
-         top: 24px;
-         left: 10px;
-     }
-     .navbar-toggler {
-         position: fixed;
-         top: 45px;
-         right: 70px;
-         border: none;
-     }
-     .cart--btn {
-         position: fixed;
-         top: 45px;
-         right: 10px;
-     }
- } 
+/* NavBar */
+@media only screen and (min-width:0px) and (max-width:991px) {
+.navbar-nav {
+    position: relative;
+    top: 18vh;
+    right: 12px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(16, 16, 16);
+    width: 100vw;
+    }
+.nav--navbrand {
+    position: fixed;
+    top: 24px;
+    left: 10px;
+    }
+.navbar-toggler {
+    position: fixed;
+    top: 45px;
+    right: 70px;
+    border: none;
+    }
+.cart--btn {
+    position: fixed;
+    top: 45px;
+    right: 10px;
+    } 
+} 
