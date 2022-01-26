@@ -30,10 +30,10 @@ function ItemDetail( {detail} ) {
                   <Card>
                       <Card.Img src={detail.img} alt="..." />
                       <Card.Body>
-                          <Card.Title className="text-center">{detail.name}</Card.Title>
-                          <Card.Text className="detail__text--price">Precio: {detail.price}</Card.Text>
-                          <Card.Text className="detail__text--price">Precio: {formatNumber(detail.price)}</Card.Text>
-                          <Card.Text className="detail__text--stock">Stock disponible: {detail.stock}</Card.Text>
+                      <Card.Title className="text-center">{detail.name}</Card.Title>
+                        <Card.Text className="detail__text--description">{detail.description}</Card.Text>
+                        <Card.Text className="detail__text--price">Precio: {formatNumber(detail.price)}</Card.Text>
+                        <Card.Text className="detail__text--stock">Stock disponible: {detail.stock}</Card.Text>
                           {!addCart ? (
                                <ItemCount onAdd={onAdd} stock={detail.stock} />
                           ) : (

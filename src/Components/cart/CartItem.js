@@ -12,7 +12,6 @@ import { useCartContext } from "../../contex/CartContex";
      return (
          <>
              <tr key={product.id}>
-                 <td>{product.id}</td>
                  <td>{product.name}</td>
                  <td>x{product.quantity}</td>
                  <td>{formatNumber(product.price)}</td>

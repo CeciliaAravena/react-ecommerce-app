@@ -1,4 +1,4 @@
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PropagateLoader from "react-spinners/PropagateLoader";
 import { css } from "@emotion/react";
 
 
@@ -15,7 +15,7 @@ function Loading(props) {
                  <h5 style={{fontSize: '40px', marginRight: '20px', color: 'white', textShadow: '0 0 20px #FF2079'}}>
                      {props.load}
                  </h5>
-                 <PacmanLoader color='#FF2079' css={override} size={20} />
+                 <PropagateLoader color='#FF2079' css={override} size={30} />
              </section> 
          </>
      )
