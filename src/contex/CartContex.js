@@ -17,14 +17,6 @@ function CartContextProvider( {children} ) {
           
          prodAdd.quantity = prodAdd.quantity + item.quantity;
          setCartList([...cartList.filter(prod => prod.id !== item.id), prodAdd]);
-
-        
-         // if (prodAdd) {
-         //     prodAdd.quantity = prodAdd.quantity + item.quantity
-         //     setCartList(cartList)
-         // } else {
-         //     setCartList([...cartList, item])
-         // }
      }
 
       // Borra item del carrito
@@ -62,7 +54,16 @@ function CartContextProvider( {children} ) {
          return( 
             cartList.reduce(prod => (subtotalBuy(prod) + ivaBuy(prod)), 0)
          )
-     }
+    }
+    // Formulario
+    const [dataForm, setDataForm] = useState({ 
+        name: '',
+        phone: '',
+        email: '', 
+        emailConfirm: ''
+    })
+
+
 
     return (
         <CartContext.Provider value={{
@@ -73,7 +74,9 @@ function CartContextProvider( {children} ) {
              cartCounter,
              subtotalBuy,
              ivaBuy,
-             totalBuy
+             totalBuy,
+             dataForm,
+             setDataForm
         }}>
             {children}
         </CartContext.Provider>

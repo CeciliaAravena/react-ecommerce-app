@@ -59,7 +59,7 @@ import Button from 'react-bootstrap/Button';
                  </Button>
 
                  {/* Terminar compra */}
-                 <Button className="cart--button">
+                 <Button onClick={() => {navigate('/checkoutCart')}} className="cart--button">
                      Terminar compra
                  </Button>
              </div>

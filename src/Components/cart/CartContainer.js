@@ -1,9 +1,10 @@
-import { Button } from 'react-bootstrap';
+import  Button  from 'react-bootstrap/Button';
 import CartItemList from './CartItemList';
 import Container from 'react-bootstrap/Container';
 import { useCartContext } from '../../contex/CartContex';
 import { useNavigate } from 'react-router-dom';
 
+import 'animate.css';
 import './cart.css';
 
 
@@ -33,4 +34,4 @@ import './cart.css';
 }
 
 
-export default CartContainer
+export default CartContainer;

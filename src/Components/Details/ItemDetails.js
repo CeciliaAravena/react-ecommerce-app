@@ -14,7 +14,7 @@ function ItemDetail( {detail} ) {
 
     const navigate = useNavigate();
     const [addCart, setAddCart] = useState(0);
-    const { cartList, addToCart } = useCartContext();
+    const { addToCart } = useCartContext();
     const { formatNumber } = useFormatNumber();
 
     const onAdd = (quantity) => {
@@ -22,7 +22,7 @@ function ItemDetail( {detail} ) {
             addToCart( {...detail, quantity:quantity} )
         };
 
-    console.log('ItemDetail', cartList);
+   
 
       return (
           <>
@@ -35,7 +35,15 @@ function ItemDetail( {detail} ) {
                         <Card.Text className="detail__text--price">Precio: {formatNumber(detail.price)}</Card.Text>
                         <Card.Text className="detail__text--stock">Stock disponible: {detail.stock}</Card.Text>
                           {!addCart ? (
-                               <ItemCount onAdd={onAdd} stock={detail.stock} />
+                               <>
+                               {detail.stock > 0 ? (
+                                   <ItemCount onAdd={onAdd} stock={detail.stock} />
+                               ) : (
+                                   <Button onClick={() => {navigate('/')}} className="w-75">
+                                       Seguir comprando
+                                   </Button>
+                               )}
+                               </>
                           ) : (
                             <>
                             <Button onClick={() => {navigate('/')}} className="w-75">

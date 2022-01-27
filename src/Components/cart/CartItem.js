@@ -30,4 +30,4 @@ import { useCartContext } from "../../contex/CartContex";
      )
  }
 
- export default CartItem
+ export default CartItem;
